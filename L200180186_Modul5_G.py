@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[24]:
+# In[1]:
 
 
 class Manusia(object):
@@ -38,7 +38,19 @@ class Mahasiswa(Manusia):
 class MhsTIF(Mahasiswa):
     def katakanPy(self):
         print('Python is cool.')
-        
+
+
+# In[9]:
+
+
+def cariPosisiYangTerkecil(A, From, To):
+    position = From
+    for i in range(From+1, To):
+        if A[i] < A[position]:
+            position = i
+    return position
+A = [18, 13, 44, 25, 66, 107, 78, 89]
+cariPosisiYangTerkecil(A, 2, len(A))
 
 
 # In[25]:
